@@ -8,6 +8,7 @@ import OAuth2Redirect from "./pages/auth/OAuth2Redirect";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import MemberDashboard from "./pages/member/MemberDashboard";
 import ProtectedRoute from "./components/common/ProtectedRoute";
+import Signup from "./pages/auth/Signup";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/oauth2/redirect" element={<OAuth2Redirect />} />
+        <Route path="/signup" element={<Signup />} />
         <Route
           path="/books/:id"
           element={<BookDetail />}
